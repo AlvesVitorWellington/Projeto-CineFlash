@@ -1,0 +1,14 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header_principal{
+background-image: url(../imagens/menu.jpg);
+height: 500px;
+background-size: cover;
+background-position: center;
+border-top: 1px solid transparent;
+}
+#logo_inicio img{
+    height: 60px;
+    margin: 5px 0px 0px 5px;
+}
