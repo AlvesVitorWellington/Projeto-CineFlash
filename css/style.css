@@ -18,12 +18,31 @@ body {
     float: left;
 }
 
+.pesquisa {
+    position: relative;
+    right: 200px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.header_principal nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+.pesquisa:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .header_principal nav ul {
     text-align: right;
     margin: 20px 50px 0 0;
 }
 
-.header_principal nav li {
+.header_principal nav .menu {
     display: inline-block;
     list-style: none;
     border: 1px solid white;
