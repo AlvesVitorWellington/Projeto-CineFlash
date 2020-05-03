@@ -1,14 +1,48 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #ccc;
 }
-.header_principal{
-background-image: url(../imagens/menu.jpg);
-height: 500px;
-background-size: cover;
-background-position: center;
-border-top: 1px solid transparent;
+
+.header_principal {
+    background-image: url(../imagens/menu.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    border-top: 1px solid transparent;
 }
-#logo_inicio img{
+
+#logo_inicio img {
     height: 60px;
     margin: 5px 0px 0px 5px;
+    float: left;
+}
+
+.header_principal nav ul {
+    text-align: right;
+    margin: 20px 50px 0 0;
+}
+
+.header_principal nav li {
+    display: inline-block;
+    list-style: none;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+.header_principal nav a {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.header_principal nav a:hover {
+    color: gold;
+    background: rgba(0, 0, 0, 0.5);
+    font-style: unset;
 }
