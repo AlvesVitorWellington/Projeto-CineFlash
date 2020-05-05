@@ -7,28 +7,113 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
+<!--Corpo da página-->
+
 <body>
-    <header class="header_principal">
-        <nav>
-            <ul>
-                <li class="menu"><a href="#">Contato </a></li>
-                <li class="menu"><a href="#">Quem Somos</a></li>
-                <li class="menu"><a href="index.html">Inicio</a></li>
-            </ul>
-            <input class="pesquisa" type="search" placeholder="Pesquise por Filmes">
-            <button class="botao"></button>
-        </nav>
-    </header>
+    <!--Div geral caso queira colocar alguma estilização que não envolva o body(corpo) todo-->
+    <div>
+        <!--Cabeçalho da Pagina, classe criada para estilizar todo o cabeçalho-->
+        <header class="header_principal">
+            <!--Menu de navegação-->
+            <nav>
+                <!--Lista não ordenada-->
+                <ul>
+                    <!--Linhas contendo link pra redirecionar para outras paginas-->
+                    <li class="menu"><a href="index.html">Inicio</a></li>
+                    <li class="menu"><a href="#">Programação</a></li>
+                    <li class="menu"><a href="#">Quem Somos</a></li>
+                </ul>
+                <!--Campo de Pesquisa(Campo de texto e o botão)-->
+                <div class="Campo_pesquisa">
+                    <!--Placeholder = marca d´agua-->
+                    <input class="pesquisa" type="search" placeholder="Pesquise por Filmes">
+                    <button class="botao"></button>
+                </div>
+            </nav>
+        </header>
+        <!--Conteúdo principal da página-->
+        <main>
+            <!--Tópico do conteúdo principal-->
+            <div class="texto_main">
+                <h1>Filmes em Destaque</h1>
+            </div>
+            <!--Div(card) feita para estilizar todos as cards em conjunto-->
+            <!--Div(card_01) feita para estilizar somente alguns cards-->
+            <!--obs: class="card card_01" = cria duas classes de uma vez só, mesma coisa que: class="card" class="card_01"-->
+            <div class="card card_01">
+                <!--Div para estilizar todas as imagens, sem conter texto-->
+                <div class="filme">
+                    <img src="imagens/filme01.png" alt="Imagem do Filme Free Guy">
+                </div>
+                <!--Div para estilizar as informações sobre os filmes-->
+                <div class="info_filme">
+                    <p><strong>Data de Lançamento:</strong> 3 de julho de 2020.</p>
+                    <p><strong>Gênero:</strong> Comédia, Ação.</p>
+                    <p><strong>Direção:</strong> Shawn Levy.</p>
+                    <p><strong>Elenco:</strong> Ryan Reynolds, Jodie Comer, Lil Rel Howery.</p>
+                    <p><strong>Nacionalidade:</strong> EUA.</p>
+                    <p><strong>Sinopse:</strong> Um caixa de banco preso a uma entediante rotina tem sua vida virada de cabeça para baixo quando ele descobre que é personagem em um brutalmente realista vídeo game de mundo aberto. Agora ele precisa aceitar
+                        sua realidade e lidar com o fato de que é o único que pode salvar o mundo.</p>
+                    <p class="trailer"><a href="https://youtu.be/CMynkj1qAYo" target="blank"><strong>Assista o Trailer</strong></a></p>
+                    <!--Target="blank" = abre uma nova guia-->
+                    <!--Strong = deixa em negrito e com sentido semantico, dar enfase-->
+                </div>
+            </div>
+            <!--Como ja expliquei a cima não vou ezplicar de novo, mesma coisa, agradeço a compreenção-->
+            <div class="card card_02">
+                <div class="filme">
+                    <img src="imagens/filme02.png" alt="Imagem do Filme Artemis Fowl">
+                </div>
+                <div class="info_filme">
+                    <p><strong>Data de Lançamento:</strong> 9 de agosto de 2020.</p>
+                    <p><strong>Gênero:</strong> Aventura, Fantasia, Família.</p>
+                    <p><strong>Direção:</strong> Kenneth Branagh.</p>
+                    <p><strong>Elenco:</strong> Ferdia Shaw, Colin Farrell, Judi Dench.</p>
+                    <p><strong>Nacionalidade:</strong> EUA.</p>
+                    <p><strong>Sinopse:</strong> Artemis Fowl é um garoto de 12 anos extremamente inteligente que usa sua capacidade para roubar. Um dia, ele descobre um local mágico chamado mundo das fadas. Decidido a roubar a fortuna local, ele sequestra
+                        um elfo e cobra um resgate para libertá-lo. Só que logo a Liga de Elite da Polícia parte em seu encalço.</p>
+                    <p class="trailer"><a href="https://youtu.be/3FFaEP8WCLs" target="blank"><strong>Assista o Trailer</strong></a></p>
+                </div>
+            </div>
+            <!--Como ja expliquei a cima não vou ezplicar de novo, mesma coisa, agradeço a compreemção-->
+            <div class="card card_03">
+                <div class="filme">
+                    <img src="imagens/filme03.png" alt="Imagem do Filme Bob Esponja o Incrivel Resgate">
+                </div>
+                <div class="info_filme">
+                    <p><strong>Data de Lançamento:</strong> 30 de julho de 2020.</p>
+                    <p><strong>Gênero:</strong> Animação, Comédia.</p>
+                    <p><strong>Direção:</strong> Tim Hill.</p>
+                    <p><strong>Elenco:</strong> Awkwafina, Tom Kenny, Clancy Brown.</p>
+                    <p><strong>Nacionalidade:</strong> EUA.</p>
+                    <p><strong>Sinopse:</strong> O sumiço de Gary preocupa seu amigo. Segundo Bob Esponja, Gary foi "caracolstrado" pelo temível Rei Poseidon e levado para a cidade perdida de Atlantic City. Junto a Patrick Estrela, ele sai em uma missão
+                        de resgate ao querido amigo, e nesta jornada os dois vão conhecer novos personagens e viver inimagináveis aventuras. </p>
+                    <p class="trailer"><a href="https://youtu.be/NORzSapZfVc" target="blank"><strong>Assista o Trailer</strong></a></p>
+                </div>
+            </div>
 
-    <div class=""></div>
+            <div class="card card_04">
+                <div class="filme">
+                    <img src="imagens/filme04.png" alt="Imagem do Filme Scoob! O Filme">
+                </div>
+                <div class="info_filme">
+                    <p><strong>Data de Lançamento:</strong> 14 de maio de 2020.</p>
+                    <p><strong>Gênero:</strong> Comédia, Animação, Família.</p>
+                    <p><strong>Direção:</strong> Tony Cervone.</p>
+                    <p><strong>Elenco:</strong> Kiersey Clemons, Zac Efron, Will Forte.</p>
+                    <p><strong>Nacionalidade:</strong> EUA.</p>
+                    <p><strong>Sinopse:</strong> Salsicha e Scooby tem uma conexão instantânea envolvendo comida em seu primeiro encontro, e logo se unem aos jovens detetives Fred, Velma e Daphne para formar a Mistério S/A. Só que, após resolver centenas
+                        de casos, eles encontram o desafio de impedir o "apocãolipse", que virá quando o fantasma do cão Cerberus for liberado no mundo.</p>
+                    <p class="trailer"><a href="https://youtu.be/b15_u5wYB0I" target="blank"><strong>Assista o Trailer</strong></a></p>
+                </div>
+            </div>
+        </main>
+        <!--Rodapé da página, sem nada por enquanto-->
+        <footer class="footer_principal">
 
-    <main>
-
-    </main>
-    <footer class="footer_principal">
-
-    </footer>
+        </footer>
+    </div>
 
 </body>
 
-</html>
+</html

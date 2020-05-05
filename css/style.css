@@ -1,11 +1,16 @@
+/*Estilizando o cabeçalho, só fonte, cor do background e margem*/
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: #ccc;
+    background-color: #B9B4FF;
 }
 
+
+/*Inserindo e ajustando o background, background-size: cover = tenta adaptar o background*/
+
 .header_principal {
-    background-image: url(../imagens/BackgroundHeader\(1\).jpg);
+    background-image: url(../imagens/BackgroundHeader.jpg);
     height: 600px;
     width: 100%;
     background-size: cover;
@@ -13,18 +18,13 @@ body {
     border-top: 1px solid transparent;
 }
 
-.header_principal nav li {
-    display: inline-block;
-    list-style: none;
-}
 
-.header_principal nav ul {
-    text-align: left;
-    margin: 20px 50px 0 0;
-    display: inline-block;
-}
+/*Estilizando as linhas da lista não ordenada, list-style: none = tira as bolinhas antes das palavras,
+display: inline-block = permite alinhamento na mesma linha tipo em line e a estilização em block,
+gostoso demais mexer nisso, border-radius = aredonda as pontas das bordas, text-shadow = sombreamento*/
 
 .header_principal nav .menu {
+    list-style: none;
     display: inline-block;
     list-style: none;
     border: 1px solid white;
@@ -32,6 +32,20 @@ body {
     border-radius: 5px;
     text-shadow: 2px 2px 2px #000;
 }
+
+
+/*Estilizando a lista não ordenada como um todo, text-align: left = alinhando a esquerda*/
+
+.header_principal nav ul {
+    text-align: left;
+    margin: 20px 50px 0 0;
+    display: inline-block;
+}
+
+
+/*Estilizando os links de navegação, display: block = pra aceita estilização em,
+text-decoration: none = tira o traceijado de baixo da palavra, text-transform: uppercase = deixa o texto em caixa alta,
+letter-spacing = espaçamento entre letras, rgba(red, greem, black, alpha) o alpha serve pra dar opacidade*/
 
 .header_principal nav a {
     background: rgba(0, 0, 0, 0.3);
@@ -44,15 +58,25 @@ body {
     letter-spacing: 2px;
 }
 
+
+/*Estilizando eventos ao passar o mouse por cima do link, no caso o menu de navegação*/
+
 .header_principal nav a:hover {
     color: gold;
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid gold;
 }
 
+
+/*Centralizando o texto a ser digitado no campo de pesquisa*/
+
 nav input {
     text-align: center;
 }
+
+
+/*Estilizando o campo de pesquisa, position: absolute = posiciona o elemento de forma absoluta em ralação as coordenadas,
+obs: não sai do lugar*/
 
 .pesquisa {
     width: 250px;
@@ -66,13 +90,23 @@ nav input {
     top: 21px;
 }
 
+
+/*Estilizando eventos ao passar o mouse por cima do campo de pesquisa, só alterando a cor*/
+
 .pesquisa:hover {
     background: rgba(0, 0, 0, 0.5);
 }
 
+
+/*Estilizando o foco do campo de pesquisa, pra não aparecer uma borasinha azul ao clica-lo*/
+
 .pesquisa:focus {
     outline: none;
 }
+
+
+/*Estilizando o botão pesquisa, cursor: pointer = o mouse reconhece o botao e muda de forma,
+testa tirando ele e colocando o mouse por cima do botão*/
 
 .botao {
     height: 40px;
@@ -88,10 +122,108 @@ nav input {
     background-color: white;
 }
 
+
+/*Estilizando eventos ao precionar e segurar o mouse, pra dar o efeito de que o botão foi clicado*/
+
 .botao:active {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+
+/*Mesma coisa do outro, tira o foco e a bordasinha azul(chata)*/
+
 .botao:focus {
     outline: none;
+}
+
+
+/*Adicionadno uma cor ao background do conteúdo principal*/
+
+main {
+    background-color: #0050B3;
+}
+
+
+/*Estiliszando o tópico da conteúdo principal, text-align: center = centraliza*/
+
+.texto_main {
+    text-align: center;
+    background-color: #004599;
+    color: white;
+    margin: 10px 0;
+    padding: 1px;
+    border-bottom: 2px solid white;
+}
+
+
+/*Estilizando os cards contendo o conteúdo(imagens e textos) do main, width: 48% = tamanho em relação ao main,
+margin: 1% = mesma coisa*/
+
+main .card {
+    width: 48%;
+    height: 380px;
+    margin: 1%;
+    background-color: #B9B4FF;
+}
+
+
+/*Estilizando as imagens dos cards, height: 100% = tamanho emr elação ao card*/
+
+.card img {
+    width: 280px;
+    height: 100%;
+    margin: 1px 5px 1px 1px;
+}
+
+
+/*Fazendo todas as imagens flutuarem para a esquerda e o texto alinhar a sua direita*/
+
+.filme {
+    float: left;
+}
+
+
+/*Justificando as inforções a respeito dos filmes*/
+
+.info_filme {
+    text-align: justify;
+}
+
+
+/*Estilizando os links que levam aos trailers dos filmes expostos*/
+
+.trailer a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Centralizando os textos dos links*/
+
+.trailer {
+    text-align: center;
+}
+
+
+/*Estilizando eventos ao passar o mouse por cima dos linkdos trailers*/
+
+.trailer a:hover {
+    color: blue;
+}
+
+
+/*Flutuando as cards 1 e 3 para a esquerda, para o 2 e 4 se alinharem a sua direita*/
+
+.card_01,
+.card_03 {
+    float: left;
+}
+
+
+/*Transformando os cards 2 e 4 em line, aceita alinhamento na mesma linha, e block,
+aceita a estilização em block, fazendo com que se aplique a estilização adequada e alinhando-se a direita dos card 1 e 3*/
+
+.card_02,
+.card_04 {
+    display: inline-block;
 }
