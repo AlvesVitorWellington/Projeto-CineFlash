@@ -189,16 +189,20 @@ aceita a estilização em block, fazendo com que se aplique a estilização adeq
         overflow: auto;
         padding: 5px;
     }
-    /*Estilizando as imagens das redes sociais*/
+    /*Estilizando as imagens das redes sociais, flutuando a esquerda para alinhar os links*/
     
     .rede img {
+        float: left;
         margin: 2px;
     }
-    /*Tiranda a linha a baixo do texto*/
+    /*Estilizando os links, text-decoration: none = tirando a linha a baixo do texto,
+    line-height = espaçamento entre linhas para centralizar o texto, letter-spacing = espaçamento entre letras*/
     
     .rede a {
         text-decoration: none;
         color: silver;
+        letter-spacing: 1px;
+        line-height: 40px;
     }
     /*Adicionando evento ao passar o mouse por cima diminuir a fonte*/
     
