@@ -145,7 +145,9 @@ testa tirando ele e colocando o mouse por cima do botão*/
 
 /*Estiliszando o tópico da conteúdo principal da página index, text-align: center = centraliza*/
 
-.texto_main_index {
+.texto_main_index,
+.texto_main_programacao,
+.texto_main_quem_somos {
     text-align: center;
     background-color: #000880;
     color: white;
@@ -325,46 +327,6 @@ aceita a estilização em block, fazendo com que se aplique a estilização adeq
 
 /*Estilização da página Programação, como essa página vai ter o mesmo cabeçalho e rodapé entao só preciso
 estilizar o conteúdo principal e fazer*/
-
-
-/*Estilizando o tópico do main*/
-
-.texto_main_programacao {
-    text-align: center;
-    background-color: #000880;
-    color: white;
-    margin-top: 10px;
-    padding: 1px;
-    border-bottom: 2px solid white;
-}
-
-
-/*Estilizando a section com a tabela dos horários, width: 80%- em ralação ao article que ela está inserida,
-overflow: auto- pro footer não se sobrepor*/
-
-.tabela {
-    width: 80%;
-    margin: 10px 10%;
-    overflow: auto;
-}
-
-
-/*Estilizando a tabela, width: 100%- em relação a section(.tabela)*/
-
-table {
-    width: 100%;
-    text-align: center;
-    letter-spacing: 1px;
-    background-color: #0050B3;
-    color: wheat;
-}
-
-
-/*Estilizando background do título da tabela*/
-
-caption {
-    background-color: #130080;
-}
 
 
 /*Estilizando os h2 das sections*/
@@ -565,4 +527,145 @@ ou seja, esconde o link "Ver mais", obs: essa ação e a anterior agem simultane
 
 #mostrar a:hover {
     color: white;
+}
+
+
+/*Estilizando a section com a tabela dos horários, width: 80%- em ralação ao article que ela está inserida,
+overflow: auto- pro footer não se sobrepor*/
+
+.tabela {
+    width: 80%;
+    margin: 10px 10%;
+    overflow: auto;
+}
+
+
+/*Estilizando a tabela, width: 100%- em relação a section(.tabela)*/
+
+table {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #0050B3;
+    color: wheat;
+}
+
+
+/*Estilizando background do título da tabela*/
+
+caption {
+    background-color: #130080;
+}
+
+
+/*Estilização da pagina Quem Somos*/
+
+
+/*Estilizando o texto quem somos,  display: inline-block = pra alinhar e estilizar*/
+
+.texto_quem_somos {
+    text-align: justify;
+    letter-spacing: 1px;
+    width: 50%;
+    display: inline-block;
+    margin: 30px 0 0 5px;
+    font-size: 20px;
+}
+
+
+/*Estilizando a div missao, flutuando a esquerda, width: 24.5%= em relaçaõ ao main*/
+
+.missao {
+    width: 24.5%;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #130080;
+    float: left;
+    margin-top: 30px;
+}
+
+
+/*Estilizando o topico da missão*/
+
+.missao .topico {
+    color: white;
+    text-align: center;
+    margin-top: 45px;
+}
+
+
+/*Estilizando o texto da missão, width: 80% = em relação a div .missao*/
+
+.texto_missao {
+    width: 80%;
+    height: 50%;
+    margin-left: 10%;
+    color: white;
+    text-align: center;
+}
+
+
+/*Estilizando a div visao, flutuandoa direita, width: 24.5% = em ralação ao main*/
+
+.visao {
+    width: 24.5%;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #130080;
+    float: right;
+    margin-top: 30px;
+}
+
+
+/*Estilizando o topico da visão*/
+
+.visao .topico {
+    color: white;
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+/*Estilizando o texto da missão, width: 80% = em relação a div .visao*/
+
+.texto_visao {
+    width: 80%;
+    height: 50%;
+    margin-left: 10%;
+    color: white;
+    text-align: center;
+}
+
+
+/*Estilizando a div valores, width: 50% = em ralação ao main*/
+
+.valores {
+    width: 50%;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #130080;
+    margin: 20px 0 20px 25%;
+}
+
+
+/*Estilizando o topico dos valores*/
+
+.valores .topico {
+    color: white;
+    text-align: center;
+    margin-top: 45px;
+}
+
+
+/*Estilizando o texto dos valores, width: 80% = em relação a div .valores*/
+
+.texto_valores {
+    width: 80%;
+    height: 50%;
+    margin-left: 10%;
+    color: white;
+    text-align: center;
 }
