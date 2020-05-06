@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Compra</title>
+    <link rel="stylesheet" href="css/style_formulario.css">
+
+</head>
+
+<body>
+    <!--Criando formulário, id="formulario" = pra estilizar a area do formulario-->
+    <form id="formulario">
+        <!--class="nome"= classe pra estilizar a label, o mesmo para as outras classes nos labels-->
+        <!--class="campo_nome" = para estilizar o campo de texto, o mesmo para as outras classes nos inouts-->
+        <label class="nome"><strong>Nome:</strong></label><input type="text" name="nome" class="campo_nome" placeholder="Digite Seu Nome Completo"><br><br>
+        <label class="email"><strong>E-mail:</strong></label><input type="text" name="e-mail" class="campo_email" placeholder="Digite Seu Endereço de E-mail"><br><br>
+        <label class="cpf"><strong>CPF:</strong></label><input type="text" name="cpf" class="campo_cpf" placeholder="Digite Seu CPF"><br><br>
+        <label class="telefone"><strong>Telefone:</strong></label><input type="text" name="telefone" class="campo_telefone" placeholder="Digite Seu Número de Telefone"><br><br><br>
+        <label><strong>Selecione o dia e sessão desejada:</strong></label><br><br>
+        <label><strong>Dias:</strong></label><br>
+        <!--type="checkbox" = caixa de seleção, pra multipla escolha-->
+        <input type="checkbox" name="dia" value="domingo"><label>Domingo</label>
+        <input type="checkbox" name="dia" value="segunda"><label>Segunda</label>
+        <input type="checkbox" name="dia" value="terca"><label>Terça</label>
+        <input type="checkbox" name="dia" value="quarta"><label>Quarta</label>
+        <input type="checkbox" name="dia" value="quinta"><label>Quinta</label>
+        <input type="checkbox" name="dia" value="sabado"><label>Sexta</label><br>
+        <label><strong>sessões:</strong></label><br>
+        <input type="checkbox" name="sessao" value="sessao1"><label>Sessão 1</label>
+        <input type="checkbox" name="sessao" value="sessao2"><label>Sessão 2</label>
+        <input type="checkbox" name="sessao" value="sessao3"><label>Sessão 3</label><br><br>
+        <!--Botao comprar-->
+        <button class="botao_formulario">Comprar</button><br><br>
+        <!--Nota, esplicação-->
+        <label class="nota">Nota: Ao clicar em comprar você será redirecionado a página do PagSeguro, que lhe disponibilizará o preço e transação finânceira para a compra do(s) ingresso(s). Obrigado Pela Preferêmcia!</label>
+    </form>
+    <!--src="src/src_formulario.js" = importando os codigos javaScript-->
+    <script src="src/src_formulario.js">
+    </script>
+</body>
+
+</html>

@@ -96,7 +96,8 @@ obs: não sai do lugar*/
 }
 
 
-/*Estilizando o foco do campo de pesquisa, pra não aparecer uma borasinha azul ao clica-lo*/
+/*Estilizando o foco do campo de pesquisa,pra não aparecer uma borasinha azul ao clica-lo,
+outline: none - tradução literal esboço: nenhum, tira o foco*/
 
 .pesquisa:focus {
     outline: none;
@@ -128,23 +129,23 @@ testa tirando ele e colocando o mouse por cima do botão*/
 }
 
 
-/*Mesma coisa do outro, tira o foco e a bordasinha azul(chata)*/
+/*Mesma coisa do outro, tira o foco e a bordasinha azul(foco), outline: none - tradução literal esboço: nenhum, tira o foco*/
 
 .botao:focus {
     outline: none;
 }
 
 
-/*Adicionadno uma cor ao background do conteúdo principal e uma borda*/
+/*Adicionadno uma cor ao background do conteúdo principal da página index e uma borda*/
 
-main {
+.main_index {
     background-color: #0050B3;
 }
 
 
-/*Estiliszando o tópico da conteúdo principal, text-align: center = centraliza*/
+/*Estiliszando o tópico da conteúdo principal da página index, text-align: center = centraliza*/
 
-.texto_main {
+.texto_main_index {
     text-align: center;
     background-color: #000880;
     color: white;
@@ -157,7 +158,7 @@ main {
 /*Estilizando os cards contendo o conteúdo(imagens e textos) do main, width: 48% = tamanho em relação ao main,
 margin: 1% = mesma coisa*/
 
-main .card {
+.main_index .card {
     width: 48%;
     height: 380px;
     margin: 1%;
@@ -322,12 +323,13 @@ aceita a estilização em block, fazendo com que se aplique a estilização adeq
 }
 
 
-/*Estilização da página Programação*/
+/*Estilização da página Programação, como essa página vai ter o mesmo cabeçalho e rodapé entao só preciso
+estilizar o conteúdo principal e fazer*/
 
 
-/*Estilizando o tópico do article(conteúdo relacionado ao principal)*/
+/*Estilizando o tópico do main*/
 
-.texto_article {
+.texto_main_programacao {
     text-align: center;
     background-color: #000880;
     color: white;
@@ -495,6 +497,10 @@ filmes abaixo dele)*/
 }
 
 
+/*Pode aparecer a duvida e como faz pra voltar a pagina anterior, no caso a pagina sem Quinta, Sexta e sabado?,
+simples ao clicar no "Ver menos"ele redireciona pra mesma pagina como o #*/
+
+
 /*Adiciona um evento ao clicar o mouse no link "Ver menos", basicamente oculta os elementos com a classe .visualizar,
 ou seja, esconde o link "Ver mais", obs: essa ação e a anterior agem simultanemente */
 
@@ -503,15 +509,54 @@ ou seja, esconde o link "Ver mais", obs: essa ação e a anterior agem simultane
 }
 
 
-/*Pode aparecer a duvida e como faz pra voltar a pagina anterior, no caso a pagina sem Quinta, Sexta e sabado?,
-simples ao clicar no "Ver menos"ele redireciona pra mesma pagina como o #*/
+/*Estilizando o botao comprar, display: block- para o texto "Ver mais" descer e n ficar na mesma linha*/
+
+.comprar1,
+.comprar2 {
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: block;
+    margin: 0 0 20px 46.3%;
+}
+
+
+/*Mesma coisa do outro, tira o foco e a bordasinha azul(foco), outline: none - tradução literal esboço: nenhum, tira o foco*/
+
+.comprar1:focus {
+    outline: none;
+}
+
+
+/*Ao clicar e segurar muda a cor*/
+
+.comprar1:active {
+    background-color: #B9B4FF;
+    color: white;
+}
+
+
+/*Mesma coisa do outro, tira o foco e a bordasinha azul(foco), outline: none - tradução literal esboço: nenhum, tira o foco*/
+
+.comprar2:focus {
+    outline: none;
+}
+
+
+/*Ao clicar e segurar muda a cor*/
+
+.comprar2:active {
+    background-color: #B9B4FF;
+    color: white;
+}
 
 
 /*Estilizando as link "Ver menos" e "Ver maois"*/
 
 #mostrar a {
     text-decoration: none;
-    margin-left: 50%;
+    margin-left: 47%;
     color: black;
 }
 

@@ -1,0 +1,116 @@
+/*Estilizando a página Formulário*/
+
+
+/*Eztilizando o body do formulario*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #B9B4FF;
+}
+
+
+/*Estilizando a area do formulario, margin-left: 7%, width: 86%=  em relação a body*/
+
+#formulario {
+    margin-left: 7%;
+    width: 86%;
+}
+
+
+/*Para a estilização da area ser estatica, fixa*/
+
+#formulario {
+    position: absolute;
+}
+
+
+/*Estilizando os campos de texto, não todos, width: 70% = em relação ao elemento de id #formulario*/
+
+#formulario input.campo_nome,
+input.campo_email {
+    width: 70%;
+}
+
+
+/*Mesma coisa do anterior*/
+
+#formulario input.campo_telefone,
+input.campo_cpf {
+    width: 38%;
+}
+
+
+/*Posicionando os campos de texto e estilizando o tamanho*/
+
+#formulario input.campo_nome,
+input.campo_telefone,
+input.campo_cpf,
+input.campo_email {
+    position: absolute;
+    left: 70px;
+    margin-top: 5px;
+    height: 23px;
+}
+
+
+/*Posicionando os labels em ralação ao topo*/
+
+.nome,
+.cpf,
+.telefone,
+.email {
+    position: absolute;
+    margin-top: 12px;
+}
+
+
+/*Posicionando o label em ralação a lateral esquerda*/
+
+.nome {
+    position: absolute;
+    left: 19px;
+}
+
+
+/*Mesma coisa*/
+
+.email {
+    position: absolute;
+    left: 16px;
+}
+
+
+/*Mesma coisa*/
+
+.cpf {
+    position: absolute;
+    left: 32px;
+}
+
+
+/*Mesma coisa*/
+
+.nota {
+    font-size: 10px;
+}
+
+
+/*Estilizando o botão comprar, cursor: pointer= o cursor identifica o elemento e muda de forma,
+border-radius = aredonda as bordas*/
+
+.botao_formulario {
+    width: 15%;
+    margin-left: 42.5%;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+
+/*Evento ao clicar o mouse e segurar o botão*/
+
+.botao_formulario:active {
+    background-color: #B9B4FF;
+    color: white;
+}
