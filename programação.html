@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CineFlash</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<!--Corpo da página-->
+
+<body>
+    <!--Div geral caso queira colocar alguma estilização que não envolva o body(corpo) todo-->
+    <div>
+        <!--Cabeçalho da Pagina, classe criada para estilizar todo o cabeçalho-->
+        <header class="header_principal">
+            <!--Menu de navegação-->
+            <nav>
+                <!--Lista não ordenada-->
+                <ul>
+                    <!--Linhas contendo link pra redirecionar para outras paginas-->
+                    <li class="menu"><a href="index.html">Inicio</a></li>
+                    <li class="menu"><a href="programação.html">Programação</a></li>
+                    <li class="menu"><a href="#">Quem Somos</a></li>
+                </ul>
+                <!--Campo de Pesquisa(Campo de texto e o botão)-->
+                <div class="Campo_pesquisa">
+                    <!--Placeholder = marca d´agua-->
+                    <input class="pesquisa" type="search" placeholder="Pesquise por Filmes">
+                    <button class="botao"></button>
+                </div>
+            </nav>
+        </header>
+        <!--Conteúdo relacionado ao principal do site-->
+        <article>
+            <!--Texto do article-->
+            <div class="texto_article">
+                <h1>Fique por Dentro da nossa Programação</h1>
+            </div>
+            <!--Section da tabela-->
+            <section class="tabela">
+                <!--Tag pra criar tabela-->
+                <table border="1">
+                    <!--Tag semântica de cabeçalho da tabela-->
+                    <thead>
+                        <!--Tag de título da tabela-->
+                        <caption>
+                            <h2 class="programacao">Horários de Funcionamento</h2>
+                        </caption>
+                        <!--Tag de linha-->
+                        <tr>
+                            <!--Tag de cabeçalho-->
+                            <th>Sessões</th>
+                            <th>Manhã</th>
+                            <th>Tarde</th>
+                            <th>Noite</th>
+                        </tr>
+                    </thead>
+                    <!--Tag semântica de corpo da tabela-->
+                    <tbody>
+                        <tr>
+                            <!--Tag de inserçaõ de conteúdo-->
+                            <td>Domingo</td>
+                            <td>09:00 ás 12:00</td>
+                            <td>13:30 ás 17:00</td>
+                            <td>20:00 ás 22:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Segunda</td>
+                            <td>Fechado</td>
+                            <td>Fechado</td>
+                            <td>Fechado</td>
+                        </tr>
+
+                        <tr>
+                            <td>Terça</td>
+                            <td>08:00 ás 10:00</td>
+                            <td>13:00 ás 16:50</td>
+                            <td>18:00 ás 21:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Quarta</td>
+                            <td>09:30 ás 11:00</td>
+                            <td>14:00 ás 17:50</td>
+                            <td>20:00 ás 22:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Quinta</td>
+                            <td>08:00 ás 10:00</td>
+                            <td>13:00 ás 16:50</td>
+                            <td>18:00 ás 21:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sexta</td>
+                            <td>07:00 ás 10:00</td>
+                            <td>13:00 ás 15:00</td>
+                            <td>18:00 ás 20:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sábado</td>
+                            <td>09:00 ás 12:00</td>
+                            <td>13:30 ás 17:00</td>
+                            <td>20:00 ás 22:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <!--Texto pra indicar o dia da semana-->
+                <h2 class="semana">Domingo</h2>
+                <!--Div pra estilizar os "cards" com as imagens em conjunto-->
+                <div class="exposicao">
+                    <!--filme_ilustracao_esquerda- Classe pra estilizar as imagens da esquerda-->
+                    <div class="filme_ilustracao_esquerda">
+                        <!--Imagens dos filmes-->
+                        <img src="imagens/filmeilustrativo1.png" alt="">
+                    </div>
+                    <!--filme_ilustracao_centro - Classe pra estilizar as imagens do centro-->
+                    <!--evento- Classe pra estilizar os eventos das imagens do centro e da direita em conjunto-->
+                    <div class="filme_ilustracao_centro evento">
+                        <img src="imagens/filmeilustrativo2.png" alt="">
+                    </div>
+                    <!--filme_ilustracao_direita- Classe pra estilizar as imagens da direita-->
+                    <div class="filme_ilustracao_direita evento">
+                        <img src="imagens/filmeilustrativo3.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="semana">Segunda</h2>
+                <p>Cinema Fechado!:(</p>
+            </section>
+            <section>
+                <h2 class="semana">Terça</h2>
+                <div class="exposicao">
+                    <div class="filme_ilustracao_esquerda ">
+                        <img src="imagens/filmeilustrativo4.png" alt="">
+                    </div>
+                    <div class="filme_ilustracao_centro evento">
+                        <img src="imagens/filmeilustrativo5.png" alt="">
+                    </div>
+                    <div class="filme_ilustracao_direita evento">
+                        <img src="imagens/filmeilustrativo6.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="semana">Quarta</h2>
+                <div class="exposicao">
+                    <div class="filme_ilustracao_esquerda ">
+                        <img src="imagens/filmeilustrativo7.png" alt="">
+                    </div>
+                    <div class="filme_ilustracao_centro evento">
+                        <img src="imagens/filmeilustrativo8.png" alt="">
+                    </div>
+                    <div class="filme_ilustracao_direita evento">
+                        <img src="imagens/filmeilustrativo9.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <!--Div pra bolar o esquema de esconder e exibir-->
+            <div id="mostrar">
+                <!--Classe pra bolar o esquema de esconder e exibir tembém-->
+                <a class="visualizar" href="#mostrar">Ver Mais</a>
+                <!--Classe pra bolar o esquema de esconder e exibir tembém-->
+                <a class="esconder" href="#">Ver Menos</a>
+                <!--Div pra bolar o esquema de esconder e exibir tembém-->
+                <div class="exibir">
+                    <section>
+                        <h2 class="semana">Quinta</h2>
+                        <div class="exposicao">
+                            <div class="filme_ilustracao_esquerda ">
+                                <img src="imagens/filmeilustrativo10.png" alt="">
+                            </div>
+                            <div class="filme_ilustracao_centro evento">
+                                <img src="imagens/filmeilustrativo11.png" alt="">
+                            </div>
+                            <div class="filme_ilustracao_direita evento">
+                                <img src="imagens/filmeilustrativo12.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="semana">Sexta</h2>
+                        <div class="exposicao">
+                            <div class="filme_ilustracao_esquerda ">
+                                <img src="imagens/filmeilustrativo13.png" alt="">
+                            </div>
+                            <div class="filme_ilustracao_centro evento">
+                                <img src="imagens/filmeilustrativo14.png" alt="">
+                            </div>
+                            <div class="filme_ilustracao_direita evento">
+                                <img src="imagens/filmeilustrativo15.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="semana">Sabado</h2>
+                        <div class="exposicao">
+                            <div class="filme_ilustracao_esquerda ">
+                                <img src="imagens/filmeilustrativo16.png" alt="">
+                            </div>
+                            <div class="filme_ilustracao_centro evento">
+                                <img src="imagens/filmeilustrativo17.png" alt="">
+                            </div>
+                            <div class="filme_ilustracao_direita evento">
+                                <img src="imagens/filmeilustrativo18.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
+
+
+        <!--Rodapé da página, sem nada por enquanto-->
+        <footer class="footer_principal">
+            <!--Classe pra estilizar as redes sociais em conjunto-->
+            <div class="redes_sociais">
+                <div class="rede">
+                    <!--Imagem da rede social-->
+                    <img src="imagens/Facebook.png" alt="Facebook/cineflashoficial">
+                    <!--Link-->
+                    <a href="www.facebook/cineflashoficial">Facebook/cineflashoficial</a>
+                </div>
+                <div class="rede">
+                    <img src="imagens/twitter.png" alt="Twitter/cineflashoficial">
+                    <a href="www.twitter/cineflashoficial">Twitter/cineflashoficial</a>
+                </div>
+                <div class="rede">
+                    <img src="imagens/Instagram.png" alt="Instagram/cineflashoficial">
+                    <a href="www.instagram/cineflashoficial">Instagram/cineflashoficial</a>
+                </div>
+            </div>
+            <!--Classe pra posicionar a imagem "Logo_flash"-->
+            <div class="logo_flash">
+                <img src="imagens/flash.png" alt="Logo Flash">
+            </div>
+            <!--Texto do footer-->
+            <p>Copyright &copy; 2020 CineFlash </p>
+            <!--Informaçoes sobre a site-->
+            <div class="info_site">
+                <!--Lista não ordenada-->
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Politica de Privacidade</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html

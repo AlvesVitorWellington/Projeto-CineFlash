@@ -1,247 +1,523 @@
-    /*Estilizando o cabeçalho, só fonte, cor do background e margem*/
-    
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        background-color: #B9B4FF;
-    }
-    /*Inserindo e ajustando o background, background-size: cover = tenta adaptar o background*/
-    
-    .header_principal {
-        background-image: url(../imagens/BackgroundHeader.jpg);
-        height: 600px;
-        width: 100%;
-        background-size: cover;
-        background-position: center bottom;
-        border-top: 1px solid transparent;
-    }
-    /*Estilizando as linhas da lista não ordenada, list-style: none = tira as bolinhas antes das palavras,
+/*Estilizando o cabeçalho, só fonte, cor do background e margem*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #B9B4FF;
+}
+
+
+/*Inserindo e ajustando o background, background-size: cover = tenta adaptar o background*/
+
+.header_principal {
+    background-image: url(../imagens/BackgroundHeader.jpg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center bottom;
+    border-top: 1px solid transparent;
+}
+
+
+/*Estilizando as linhas da lista não ordenada, list-style: none = tira as bolinhas antes das palavras,
 display: inline-block = permite alinhamento na mesma linha tipo em line e a estilização em block,
 gostoso demais mexer nisso, border-radius = aredonda as pontas das bordas, text-shadow = sombreamento*/
-    
-    .header_principal nav .menu {
-        display: inline-block;
-        list-style: none;
-        border: 1px solid white;
-        margin-left: 10px;
-        border-radius: 5px;
-        text-shadow: 2px 2px 2px #000;
-    }
-    /*Estilizando a lista não ordenada como um todo, text-align: left = alinhando a esquerda*/
-    
-    .header_principal nav ul {
-        text-align: left;
-        margin: 20px 50px 0 0;
-    }
-    /*Estilizando os links de navegação, display: block = pra aceita estilização em,
+
+.header_principal nav .menu {
+    display: inline-block;
+    list-style: none;
+    border: 1px solid white;
+    margin-left: 10px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+
+/*Estilizando a lista não ordenada como um todo, text-align: left = alinhando a esquerda*/
+
+.header_principal nav ul {
+    text-align: left;
+    margin: 20px 50px 0 0;
+}
+
+
+/*Estilizando os links de navegação, display: block = pra aceita estilização em,
 text-decoration: none = tira o traceijado de baixo da palavra, text-transform: uppercase = deixa o texto em caixa alta,
 letter-spacing = espaçamento entre letras, rgba(red, greem, black, alpha) o alpha serve pra dar opacidade*/
-    
-    .header_principal nav a {
-        background: rgba(0, 0, 0, 0.3);
-        padding: 10px;
-        display: block;
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 12px;
-        letter-spacing: 2px;
-    }
-    /*Estilizando eventos ao passar o mouse por cima do link, no caso o menu de navegação*/
-    
-    .header_principal nav a:hover {
-        color: gold;
-        background: rgba(0, 0, 0, 0.5);
-        border: 1px solid gold;
-    }
-    /*Centralizando o texto a ser digitado no campo de pesquisa*/
-    
-    nav input {
-        text-align: center;
-    }
-    /*Estilizando o campo de pesquisa, position: absolute = posiciona o elemento de forma absoluta em ralação as coordenadas,
+
+.header_principal nav a {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+
+/*Estilizando eventos ao passar o mouse por cima do link, no caso o menu de navegação*/
+
+.header_principal nav a:hover {
+    color: gold;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid gold;
+}
+
+
+/*Centralizando o texto a ser digitado no campo de pesquisa*/
+
+nav input {
+    text-align: center;
+}
+
+
+/*Estilizando o campo de pesquisa, position: absolute = posiciona o elemento de forma absoluta em ralação as coordenadas,
 obs: não sai do lugar*/
-    
-    .pesquisa {
-        width: 250px;
-        height: 40px;
-        border-radius: 50px;
-        padding: 10px 40px 10px 10px;
-        background-color: rgba(65, 59, 59, 0.5);
-        color: white;
-        position: absolute;
-        left: 1060px;
-        top: 21px;
-    }
-    /*Estilizando eventos ao passar o mouse por cima do campo de pesquisa, só alterando a cor*/
-    
-    .pesquisa:hover {
-        background: rgba(0, 0, 0, 0.5);
-    }
-    /*Estilizando o foco do campo de pesquisa, pra não aparecer uma borasinha azul ao clica-lo*/
-    
-    .pesquisa:focus {
-        outline: none;
-    }
-    /*Estilizando o botão pesquisa, cursor: pointer = o mouse reconhece o botao e muda de forma,
+
+.pesquisa {
+    width: 250px;
+    height: 40px;
+    border-radius: 50px;
+    padding: 10px 40px 10px 10px;
+    background-color: rgba(65, 59, 59, 0.5);
+    color: white;
+    position: absolute;
+    left: 1060px;
+    top: 21px;
+}
+
+
+/*Estilizando eventos ao passar o mouse por cima do campo de pesquisa, só alterando a cor*/
+
+.pesquisa:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/*Estilizando o foco do campo de pesquisa, pra não aparecer uma borasinha azul ao clica-lo*/
+
+.pesquisa:focus {
+    outline: none;
+}
+
+
+/*Estilizando o botão pesquisa, cursor: pointer = o mouse reconhece o botao e muda de forma,
 testa tirando ele e colocando o mouse por cima do botão*/
-    
-    .botao {
-        height: 40px;
-        width: 40px;
-        cursor: pointer;
-        border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
-        position: absolute;
-        left: 1270px;
-        top: 21px;
-        background-image: url(../imagens/IconPesquisar.png);
-        background-position: center;
-        background-color: white;
-    }
-    /*Estilizando eventos ao precionar e segurar o mouse, pra dar o efeito de que o botão foi clicado*/
-    
-    .botao:active {
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-    /*Mesma coisa do outro, tira o foco e a bordasinha azul(chata)*/
-    
-    .botao:focus {
-        outline: none;
-    }
-    /*Adicionadno uma cor ao background do conteúdo principal e uma borda*/
-    
-    main {
-        background-color: #0050B3;
-    }
-    /*Estiliszando o tópico da conteúdo principal, text-align: center = centraliza*/
-    
-    .texto_main {
-        text-align: center;
-        background-color: #000880;
-        color: white;
-        margin-top: 10px;
-        padding: 1px;
-        border-bottom: 2px solid white;
-    }
-    /*Estilizando os cards contendo o conteúdo(imagens e textos) do main, width: 48% = tamanho em relação ao main,
+
+.botao {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    left: 1270px;
+    top: 21px;
+    background-image: url(../imagens/IconPesquisar.png);
+    background-position: center;
+    background-color: white;
+}
+
+
+/*Estilizando eventos ao precionar e segurar o mouse, pra dar o efeito de que o botão foi clicado*/
+
+.botao:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/*Mesma coisa do outro, tira o foco e a bordasinha azul(chata)*/
+
+.botao:focus {
+    outline: none;
+}
+
+
+/*Adicionadno uma cor ao background do conteúdo principal e uma borda*/
+
+main {
+    background-color: #0050B3;
+}
+
+
+/*Estiliszando o tópico da conteúdo principal, text-align: center = centraliza*/
+
+.texto_main {
+    text-align: center;
+    background-color: #000880;
+    color: white;
+    margin-top: 10px;
+    padding: 1px;
+    border-bottom: 2px solid white;
+}
+
+
+/*Estilizando os cards contendo o conteúdo(imagens e textos) do main, width: 48% = tamanho em relação ao main,
 margin: 1% = mesma coisa*/
-    
-    main .card {
-        width: 48%;
-        height: 380px;
-        margin: 1%;
-        background-color: #B9B4FF;
-    }
-    /*Estilizando as imagens dos cards, height: 100% = tamanho emr elação ao card*/
-    
-    .card img {
-        width: 280px;
-        height: 100%;
-        margin: 1px 5px 1px 1px;
-    }
-    /*Fazendo todas as imagens flutuarem para a esquerda e o texto alinhar a sua direita*/
-    
-    .filme {
-        float: left;
-    }
-    /*Justificando as inforções a respeito dos filmes*/
-    
-    .info_filme {
-        text-align: justify;
-    }
-    /*Estilizando os links que levam aos trailers dos filmes expostos*/
-    
-    .trailer a {
-        text-decoration: none;
-        color: black;
-    }
-    /*Centralizando os textos dos links*/
-    
-    .trailer {
-        text-align: center;
-    }
-    /*Estilizando eventos ao passar o mouse por cima dos linkdos trailers*/
-    
-    .trailer a:hover {
-        color: blue;
-    }
-    /*Flutuando as cards 1 e 3 para a esquerda, para o 2 e 4 se alinharem a sua direita*/
-    
-    .card_01,
-    .card_03 {
-        float: left;
-    }
-    /*Transformando os cards 2 e 4 em line, aceita alinhamento na mesma linha, e block,
+
+main .card {
+    width: 48%;
+    height: 380px;
+    margin: 1%;
+    background-color: #B9B4FF;
+}
+
+
+/*Estilizando as imagens dos cards, height: 100% = tamanho emr elação ao card*/
+
+.card img {
+    width: 280px;
+    height: 100%;
+    margin: 1px 5px 1px 1px;
+}
+
+
+/*Fazendo todas as imagens flutuarem para a esquerda e o texto alinhar a sua direita*/
+
+.filme {
+    float: left;
+}
+
+
+/*Justificando as inforções a respeito dos filmes*/
+
+.info_filme {
+    text-align: justify;
+}
+
+
+/*Estilizando os links que levam aos trailers dos filmes expostos*/
+
+.trailer a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Centralizando os textos dos links*/
+
+.trailer {
+    text-align: center;
+}
+
+
+/*Estilizando eventos ao passar o mouse por cima dos linkdos trailers*/
+
+.trailer a:hover {
+    color: blue;
+}
+
+
+/*Flutuando as cards 1 e 3 para a esquerda, para o 2 e 4 se alinharem a sua direita*/
+
+.card_01,
+.card_03 {
+    float: left;
+}
+
+
+/*Transformando os cards 2 e 4 em line, aceita alinhamento na mesma linha, e block,
 aceita a estilização em block, fazendo com que se aplique a estilização adequada e alinhando-se a direita dos card 1 e 3*/
-    
-    .card_02,
-    .card_04 {
-        display: inline-block;
-    }
-    /*Estilizando o radapé principal, overflow especifica quando o conteúdo de um elemento de nível de
+
+.card_02,
+.card_04 {
+    display: inline-block;
+}
+
+
+/*Estilizando o radapé principal, overflow especifica quando o conteúdo de um elemento de nível de
     bloco deve ser cortado, exibido com barras de rolagem ou se transborda do elemento, nesse caso faz com que
     a imagem "logo flash" se alinhe com as outras sem cortar o background da parte de baixo*/
-    
-    .footer_principal {
-        background-color: #000880;
-        border-top: 2px solid white;
-        overflow: auto;
-        padding: 5px;
-    }
-    /*Estilizando as imagens das redes sociais, flutuando a esquerda para alinhar os links*/
-    
-    .rede img {
-        float: left;
-        margin: 2px;
-    }
-    /*Estilizando os links, text-decoration: none = tirando a linha a baixo do texto,
+
+.footer_principal {
+    background-color: #000880;
+    border-top: 2px solid white;
+    overflow: auto;
+    padding: 5px;
+    height: 120px;
+}
+
+
+/*Estruturando a div pra posteriormente centralizar vereticalmente os link pelo line-height*/
+
+.rede {
+    width: 325px;
+    height: 40px;
+}
+
+
+/*Estilizando as imagens das redes sociais, flutuando a esquerda para alinhar os links*/
+
+.rede img {
+    float: left;
+    margin: 2px;
+}
+
+
+/*Estilizando os links, text-decoration: none = tirando a linha a baixo do texto,
     line-height = espaçamento entre linhas para centralizar o texto, letter-spacing = espaçamento entre letras*/
-    
-    .rede a {
-        text-decoration: none;
-        color: silver;
-        letter-spacing: 1px;
-        line-height: 40px;
-    }
-    /*Adicionando evento ao passar o mouse por cima diminuir a fonte*/
-    
-    .rede a:hover {
-        font-size: 15px;
-    }
-    /*Estilizando a fonte da div redes sociais e fazendo ela flutuar para ser pocivel alinhar os outros elementos*/
-    
-    .redes_sociais {
-        text-transform: uppercase;
-        float: left;
-    }
-    /*Estilizando o tsto do rodapé*/
-    
-    .footer_principal p {
-        margin-top: 40px;
-        text-align: center;
-        color: silver;
-    }
-    /*Estilizando as linhas da lista não ordenada, display: inline-block = pra alinhar e estilizar*/
-    
-    .footer_principal ul li {
-        display: inline-block;
-        list-style: none;
-    }
-    /*Centralizando a lista não ordenada*/
-    
-    .footer_principal ul {
-        text-align: center;
-    }
-    /*Eztilizando os links da lista ordenada*/
-    
-    .footer_principal ul a {
-        text-decoration: none;
-        color: silver;
-        margin-right: 10px;
-    }
-    /*Flutuando a imagem a direita pra alinhar todo o conteúdo do rodapé*/
-    
-    .logo_flash {
-        float: right;
-    }
+
+.rede a {
+    text-decoration: none;
+    color: silver;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+
+
+/*Adicionando evento ao passar o mouse por cima diminuir a fonte*/
+
+.rede a:hover {
+    font-size: 15px;
+}
+
+
+/*Estilizando a fonte da div redes sociais e fazendo ela flutuar para ser pocivel alinhar os outros elementos*/
+
+.redes_sociais {
+    text-transform: uppercase;
+    float: left;
+}
+
+
+/*Estilizando o tsto do rodapé*/
+
+.footer_principal p {
+    margin-top: 40px;
+    text-align: center;
+    color: silver;
+}
+
+
+/*Estilizando as linhas da lista não ordenada, display: inline-block- pra alinhar e estilizar*/
+
+.footer_principal ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+
+/*Centralizando a lista não ordenada*/
+
+.footer_principal ul {
+    text-align: center;
+}
+
+
+/*Eztilizando os links da lista ordenada*/
+
+.footer_principal ul a {
+    text-decoration: none;
+    color: silver;
+    margin-right: 10px;
+}
+
+
+/*Flutuando a imagem a direita pra alinhar todo o conteúdo do rodapé*/
+
+.logo_flash {
+    float: right;
+}
+
+
+/*Estilização da página Programação*/
+
+
+/*Estilizando o tópico do article(conteúdo relacionado ao principal)*/
+
+.texto_article {
+    text-align: center;
+    background-color: #000880;
+    color: white;
+    margin-top: 10px;
+    padding: 1px;
+    border-bottom: 2px solid white;
+}
+
+
+/*Estilizando a section com a tabela dos horários, width: 80%- em ralação ao article que ela está inserida,
+overflow: auto- pro footer não se sobrepor*/
+
+.tabela {
+    width: 80%;
+    margin: 10px 10%;
+    overflow: auto;
+}
+
+
+/*Estilizando a tabela, width: 100%- em relação a section(.tabela)*/
+
+table {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #0050B3;
+    color: wheat;
+}
+
+
+/*Estilizando background do título da tabela*/
+
+caption {
+    background-color: #130080;
+}
+
+
+/*Estilizando os h2 das sections*/
+
+.semana {
+    text-align: center;
+}
+
+
+/*Estilizando as divs que comportam as imagens dos filmes e outras divs também, width: 80%- em relaçao a section, 
+    overflow: auto- de novo pro footer não sobrepor-se, margin-left: 10%- também em relaçao a section*/
+
+.exposicao {
+    width: 80%;
+    margin-left: 10%;
+    height: 490px;
+    overflow: auto;
+}
+
+
+/*Estilizando as divs que armazenam as imagens em sí, width: 28%- agora em relação a div anterior,
+margin: 0 6% 0 2%- também em relaçãoa div, usei pra estilizar as imagens da esuqerda*/
+
+.exposicao .filme_ilustracao_esquerda {
+    width: 28%;
+    margin: 0 6% 0 2%;
+}
+
+
+/*Estilizando as imagens do filme,  width: 100%- em relação a div arterior, obs: queria ter resumido essas
+três etapas em apenas duas, mas não deu porque quando você usa width: 28% ele pega em relação ao elemento que o comporta,
+por isso tiver que fazer me três etapas*/
+
+.filme_ilustracao_esquerda img {
+    width: 100%;
+}
+
+
+/*Flutuando as imagens da esquerda*/
+
+.filme_ilustracao_esquerda {
+    float: left;
+}
+
+
+/*Mesma coisa do acima, so que usei esse pra estilixzr as imagens do centro */
+
+.exposicao .filme_ilustracao_centro {
+    width: 28%;
+    margin-right: 6%;
+}
+
+
+/*Mesma coisa também*/
+
+.filme_ilustracao_centro img {
+    width: 100%;
+}
+
+
+/*Mesma coisa do acima*/
+
+.filme_ilustracao_centro {
+    float: left;
+}
+
+
+/*Mesma coisa, usei pra estilizar as imagens da direita*/
+
+.exposicao .filme_ilustracao_direita {
+    width: 28%;
+    margin-right: 2%;
+}
+
+
+/*Mesma coisa*/
+
+.filme_ilustracao_direita img {
+    width: 100%;
+}
+
+
+/*Mesma coisa*/
+
+.filme_ilustracao_direita {
+    float: right;
+}
+
+
+/*Adicionando um evento ao passar o mouse por cimas das imagens do centro e direita*/
+
+.exposicao .evento:hover {
+    width: 30%;
+    margin: 0;
+}
+
+
+/*Mesma coisa do anterior, qó que para as imagens da esquerda*/
+
+.exposicao div:hover {
+    width: 30%;
+    margin-left: 0;
+}
+
+
+/*Estilizando o paragrafo(p), da section*/
+
+section p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/*Oculta os elementos com a classe .exibir, junto dos elementos com a classe .esconder, ou seja,
+esconde o texto "Ver menos" e os filmes abaixo dele*/
+
+#mostrar .exibir,
+#mostrar .esconder {
+    display: none;
+}
+
+
+/*Adiciona um evento ao clicar o mouse no link "Ver mais", basicamente exibi os elementos com a classe .exibir,
+juntos dos elementos com a classe .esconder, ou seja, exibe o que eu falei que escondia a cima("Ver menos" e os
+filmes abaixo dele)*/
+
+#mostrar:target .exibir,
+#mostrar:target .esconder {
+    display: block;
+}
+
+
+/*Adiciona um evento ao clicar o mouse no link "Ver menos", basicamente oculta os elementos com a classe .visualizar,
+ou seja, esconde o link "Ver mais", obs: essa ação e a anterior agem simultanemente */
+
+#mostrar:target .visualizar {
+    display: none;
+}
+
+
+/*Pode aparecer a duvida e como faz pra voltar a pagina anterior, no caso a pagina sem Quinta, Sexta e sabado?,
+simples ao clicar no "Ver menos"ele redireciona pra mesma pagina como o #*/
+
+
+/*Estilizando as link "Ver menos" e "Ver maois"*/
+
+#mostrar a {
+    text-decoration: none;
+    margin-left: 50%;
+    color: black;
+}
+
+
+/*Adiciona um evento ao passar o mouse por cima da link "Ver Mais" e "Ver Menos"*/
+
+#mostrar a:hover {
+    color: white;
+}
